@@ -4,13 +4,14 @@ var valueRegistrer = 0;
 
 const goodForU = document.getElementById("goodForU");
 
+
 function playAudio() {
     goodForU.play();
 }
 
 function clearDisplay() {
     document.getElementById('resultado').innerText = '';
-  
+
 }
 
 function appendOnDisplay(value) {
@@ -23,9 +24,14 @@ function appendOnDisplay(value) {
 
 function resultDisplay() {
     var display = document.getElementById('resultado');
-
-    display.innerText = eval(display.innerText);
-    console.log(display);
+    try {
+        display.innerText = eval(display.innerText);
+        console.log(display);
+    }
+    catch(error){
+        display.innerText = 'ERROR'
+    }
+    
 }
 
 function raizQuadrada() {
