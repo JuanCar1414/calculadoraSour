@@ -1,6 +1,6 @@
 const display = document.getElementById('resultado');
 
-var valueRegistrer;
+var valueRegistrer = 0;
 
 const goodForU = document.getElementById("goodForU");
 
@@ -10,13 +10,15 @@ function playAudio() {
 
 function clearDisplay() {
     document.getElementById('resultado').innerText = '';
+  
 }
 
 function appendOnDisplay(value) {
     var display = document.getElementById('resultado');
     display.innerText += value;
 
-    valueRegistrer = Number(value);
+    valueRegistrer += value;
+
 }
 
 function resultDisplay() {
@@ -27,8 +29,10 @@ function resultDisplay() {
 }
 
 function raizQuadrada() {
+    valueRegistrer = Number(valueRegistrer);
     let sqrt = ((Math.sqrt(valueRegistrer)).toFixed(3)).toString();
     console.log(sqrt);
+    valueRegistrer = 0;
 
     document.getElementById('resultado').innerText = sqrt;
 
