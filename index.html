@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Kannada:wght@100..900&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <audio id="goodForU">
+        <source src="./src/good4u.mp3" type="audio/mpeg">
+    </audio>
+    <header>
+
+    </header>
+    <main>
+        <div class="calculadora">
+            <div class="resultado" id="resultado"></div>
+            <div class="displayDeBotoes">
+                <div class="botoes aoQuadrado" onclick="raizQuadrada()">√x</div>
+                <div class="botoes porcentagem" onclick="appendOnDisplay('**')">^</div>
+                <div class="botoes C" onclick="clearDisplay()">C</div>
+                <div class="botoes divisao" onclick="appendOnDisplay('/')">÷</div>
+                <div class="botoes sete" onclick="appendOnDisplay('7')">7</div>
+                <div class="botoes oito" onclick="appendOnDisplay('8')">8</div>
+                <div class="botoes nove" onclick="appendOnDisplay('9')">9</div>
+                <div class="botoes multiplicacao" onclick="appendOnDisplay('*')">x</div>
+                <div class="botoes quatro" onclick="appendOnDisplay('4')">4</div>
+                <div class="botoes cinco" onclick="appendOnDisplay('5')">5</div>
+                <div class="botoes seis" onclick="appendOnDisplay('6')">6</div>
+                <div class="botoes menos" onclick="appendOnDisplay('-')">-</div>
+                <div class="botoes um" onclick="appendOnDisplay('1')">1</div>
+                <div class="botoes dois" onclick="appendOnDisplay('2')">2</div>
+                <div class="botoes tres" onclick="appendOnDisplay('3')">3</div>
+                <div class="botoes mais" onclick="appendOnDisplay('+')">+</div>
+                <div class="botoes zero" onclick="appendOnDisplay('0')">0</div>
+                <div class="botoes ponto" onclick="appendOnDisplay('.')">,</div>
+                <div class="" onclick="GUTSeasterEgg()"></div>
+                <div class="botoes igual" onclick="resultDisplay()">=</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
